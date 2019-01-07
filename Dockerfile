@@ -1,1 +1,1 @@
-FROM k8s.gcr.io/kube-cross:v1.9.3-2
+FROM gcr.io/kubernetes-helm/tiller:v2.12.1
