@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         curl \
         wget \
         vim \
+        ca-certificates \
         libatlas-base-dev \
         libboost-all-dev \
         libgflags-dev \
