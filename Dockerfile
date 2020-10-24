@@ -22,7 +22,7 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends ${DEPENDENCIES} && \
     rm -rf /var/lib/apt/lists/*
 ARG DOWNLOAD_LINK=https://registrationcenter-download.intel.com/akdlm/irc_nas/17062/l_openvino_toolkit_p_2021.1.110.tgz
-#WORKDIR /tmp
+WORKDIR /tmp
 RUN curl -LOJ "${DOWNLOAD_LINK}" && \
     tar -xzf ./*.tgz && \
     cd l_openvino_toolkit* && \
