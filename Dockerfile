@@ -30,4 +30,4 @@ RUN curl -LOJ "${DOWNLOAD_LINK}" && \
     ./install.sh -s silent.cfg && \
     rm -rf /tmp/* && \
     $INSTALL_DIR/install_openvino_dependencies.sh
-ENV INSTALLDIR /opt/intel/openvino
+ENV INSTALLDIR /opt/intel
