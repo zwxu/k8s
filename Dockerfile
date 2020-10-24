@@ -29,5 +29,5 @@ RUN curl -LOJ "${DOWNLOAD_LINK}" && \
     sed -i 's/decline/accept/g' silent.cfg && \
     ./install.sh -s silent.cfg && \
     rm -rf /tmp/* && \
-    $INSTALL_DIR/install_dependencies/install_openvino_dependencies.sh
+    $INSTALL_DIR/install_openvino_dependencies.sh
 ENV INSTALLDIR /opt/intel/openvino
